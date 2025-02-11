@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0% 1%;
+        }
+        
+         .nev{
+             position: sticky;
+             top: 0%;
+             z-index: 1;
+             box-shadow: 1px 1px 4px whitesmoke;
+             background-color: white;
+         } 
+        
+           
+
+        .list{
+            display:flex;
+            gap:30px;
+        }
+        li{
+            font-size: large;
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(11, 10, 10);
+        }
+        .sitename{
+            font-size: 20px;
+            letter-spacing:3px;
+        }
+        .about{
+            display:flex;
+            gap:80px;
+            text-align: justify;
+            padding: 4% 10%;
+        }
+         #cont{
+            flex-basis: 40%;
+            font-size: 1.5em;
+            
+         }  
+         
+         .men{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 90px;
+            justify-content: flex-end;
+         }
+         #Contact{
+            padding: 3% 6%;
+            
+         }
+         input{
+            width: 100%;
+            height: 5vh;
+            
+         }
+         button{
+            height: 50px;
+            width: 150px;
+         }
+         footer{
+            background-color: rgb(213, 206, 206);
+            padding: 1% 1%;
+         }
+         #date{
+            
+         }
+        
+           
+        
+       
+    </style>
+</head>
+<body>
+    <div class="nav nev">
+        <a href="#wall"><pre class="sitename"><b>Gaurmet au Catering</b></pre></a>
+        <div class="home">
+            <ul class="list">
+            <a href="#About"><li>About</li></a>
+                <a href="#Menu"><li>Menu</li></a>
+                <a href="#Contact"><li>Contact</li></a>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="wall" id="wall">
+        <img src="hamburger.jpg" alt="" width="100%" id="humb">
+    </div>
+
+    <section id="About">
+        <div class="about">
+            <div><img src="tablesetting2.jpg" alt="" width="600" height="900"></div>
+            <div id="cont">
+                <center><h1>About Catering</h1>
+                <h5 style="padding-top: 30px;">Tradition since 1889</h5></center>
+                <p style="padding-top: 50px;">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                <p style="color: grey; padding-top: 80px;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="Menu">
+        <div class="about men">
+            <div id="www"><img src="tablesetting.jpg" alt="" width="600" height="700"></div>
+            <div id="cont" class="cont1">
+                <h1>OUR MENU</h1>
+                <h4 style="text-align: left;">Bread Basket</h4>
+                <p style="color: grey; text-align: left;">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                <h4 style="text-align: left;">Honey Almond Granola with Fruits</h4>
+                <p style="color: grey; text-align: left;">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                <h4 style="text-align: left;">Belgian Waffle</h4>
+                <p style="color: grey; text-align: left;">Vanilla flavored batter with malted flour 7.50</p>
+                <h4 style="text-align: left;">Scrambled eggs</h4>
+                <p style="color: grey; text-align: left;">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                <h4 style="text-align: left;">Blueberry Pancakes</h4>
+                <p style="color: grey; text-align: left;">With syrup, butter and lots of berries 8.50</p>  
+        
+            </div>
+        </div>
+    </section><hr>
+
+    
+    <div id="Contact">
+        <h1>Contact</h1>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+        <h2 style="color: grey;">Catering Service, 42nd Living St, 43043 New York, NY</h2>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <input type="text" placeholder="Name"><br><br>
+        <input type="text" placeholder=" How Many People"><br><br>
+        <input type="datetime-local" id="date" value="16-11-2020 20:00"><br><br>
+        <input type="text" placeholder="Message\Special requirement"><br><br>
+        <button>SEND MESSAGE</button>
+    </div>
+
+    <footer>
+        <center><h3><em>Powered by <a href="">w3.css</a></em></h3></center>
+    </footer>
+
+
+
+</body>
+</html>
